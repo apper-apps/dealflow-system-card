@@ -1,0 +1,94 @@
+[
+  {
+    "Id": 1,
+    "title": "CloudSync Pro - Lifetime Deal",
+    "description": "Professional cloud synchronization tool with advanced encryption and team collaboration features. Sync unlimited files across all your devices with military-grade security.",
+    "originalPrice": 299,
+    "dealPrice": 49,
+    "affiliateLink": "https://example.com/cloudsync-pro",
+    "category": "Productivity",
+    "votes": 127,
+    "status": "active",
+    "featured": true,
+    "expiryDate": "2024-02-15T23:59:59Z",
+    "postedDate": "2024-01-15T10:00:00Z",
+    "imageUrl": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop",
+    "updates": [
+      {
+        "Id": 1,
+        "content": "Added new team collaboration features",
+        "timestamp": "2024-01-20T14:30:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "title": "DesignMaster Suite",
+    "description": "Complete design toolkit with AI-powered features for creating stunning graphics, logos, and marketing materials. Perfect for entrepreneurs and small businesses.",
+    "originalPrice": 199,
+    "dealPrice": 39,
+    "affiliateLink": "https://example.com/designmaster-suite",
+    "category": "Design",
+    "votes": 89,
+    "status": "active",
+    "featured": false,
+    "expiryDate": "2024-02-20T23:59:59Z",
+    "postedDate": "2024-01-18T09:15:00Z",
+    "imageUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop",
+    "updates": []
+  },
+  {
+    "Id": 3,
+    "title": "EmailFlow Marketing Platform",
+    "description": "Advanced email marketing automation with AI-powered personalization. Send unlimited emails, create beautiful templates, and track detailed analytics.",
+    "originalPrice": 399,
+    "dealPrice": 79,
+    "affiliateLink": "https://example.com/emailflow-platform",
+    "category": "Marketing",
+    "votes": 156,
+    "status": "active",
+    "featured": true,
+    "expiryDate": "2024-02-25T23:59:59Z",
+    "postedDate": "2024-01-20T11:30:00Z",
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+    "updates": [
+      {
+        "Id": 2,
+        "content": "New AI personalization engine released",
+        "timestamp": "2024-01-22T16:45:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 4,
+    "title": "CodeReview Assistant",
+    "description": "AI-powered code review tool that helps developers identify bugs, security issues, and optimization opportunities across multiple programming languages.",
+    "originalPrice": 149,
+    "dealPrice": 29,
+    "affiliateLink": "https://example.com/codereview-assistant",
+    "category": "Developer Tools",
+    "votes": 73,
+    "status": "active",
+    "featured": false,
+    "expiryDate": "2024-02-18T23:59:59Z",
+    "postedDate": "2024-01-16T15:20:00Z",
+    "imageUrl": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=400&h=300&fit=crop",
+    "updates": []
+  },
+  {
+    "Id": 5,
+    "title": "SocialGrowth Analytics",
+    "description": "Comprehensive social media analytics platform with competitor analysis, hashtag research, and automated reporting for all major social platforms.",
+    "originalPrice": 249,
+    "dealPrice": 59,
+    "affiliateLink": "https://example.com/socialgrowth-analytics",
+    "category": "Analytics",
+    "votes": 94,
+    "status": "inactive",
+    "featured": false,
+    "expiryDate": "2024-01-30T23:59:59Z",
+    "postedDate": "2024-01-12T08:45:00Z",
+    "imageUrl": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop",
+    "updates": []
+  }
+]

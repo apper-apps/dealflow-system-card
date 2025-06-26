@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "position": "hero",
+    "imageUrl": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop",
+    "link": "https://example.com/featured-deal",
+    "priority": 1,
+    "active": true,
+    "title": "Featured Deal: CloudSync Pro",
+    "description": "Save 84% on lifetime access"
+  },
+  {
+    "Id": 2,
+    "position": "sidebar",
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+    "link": "https://example.com/newsletter-signup",
+    "priority": 1,
+    "active": true,
+    "title": "Never Miss a Deal",
+    "description": "Join 10,000+ deal hunters"
+  },
+  {
+    "Id": 3,
+    "position": "between-deals",
+    "imageUrl": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=150&fit=crop",
+    "link": "https://example.com/submit-deal",
+    "priority": 1,
+    "active": true,
+    "title": "Found a Great Deal?",
+    "description": "Submit it and earn rewards"
+  },
+  {
+    "Id": 4,
+    "position": "sidebar",
+    "imageUrl": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=300&h=200&fit=crop",
+    "link": "https://example.com/trending-deals",
+    "priority": 2,
+    "active": true,
+    "title": "Trending This Week",
+    "description": "Most voted deals"
+  }
+]

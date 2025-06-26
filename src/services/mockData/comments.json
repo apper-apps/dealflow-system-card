@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "dealId": 1,
+    "userId": "user1",
+    "username": "TechEnthusiast",
+    "content": "This is an amazing deal! I've been using CloudSync Pro for 2 weeks now and it's fantastic. The sync speed is incredible.",
+    "parentId": null,
+    "timestamp": "2024-01-21T14:30:00Z",
+    "votes": 12
+  },
+  {
+    "Id": 2,
+    "dealId": 1,
+    "userId": "user2",
+    "username": "ProductivityGuru",
+    "content": "Can confirm this is legit. Great customer support too!",
+    "parentId": 1,
+    "timestamp": "2024-01-21T15:45:00Z",
+    "votes": 5
+  },
+  {
+    "Id": 3,
+    "dealId": 1,
+    "userId": "user3",
+    "username": "SmallBizOwner",
+    "content": "Perfect for my team. The collaboration features work seamlessly.",
+    "parentId": null,
+    "timestamp": "2024-01-22T09:20:00Z",
+    "votes": 8
+  },
+  {
+    "Id": 4,
+    "dealId": 2,
+    "userId": "user4",
+    "username": "DesignPro",
+    "content": "DesignMaster has saved me hours of work. The AI features are surprisingly good!",
+    "parentId": null,
+    "timestamp": "2024-01-19T16:10:00Z",
+    "votes": 15
+  },
+  {
+    "Id": 5,
+    "dealId": 3,
+    "userId": "user5",
+    "username": "MarketingMaven",
+    "content": "EmailFlow is a game-changer. The automation workflows are incredibly powerful.",
+    "parentId": null,
+    "timestamp": "2024-01-21T11:25:00Z",
+    "votes": 23
+  }
+]
