@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { toast } from 'react-toastify'
+import { useNavigate } from 'react-router-dom'
 import ApperIcon from '@/components/ApperIcon'
 import Button from '@/components/atoms/Button'
 import SearchBar from '@/components/molecules/SearchBar'
@@ -10,6 +11,7 @@ import ErrorState from '@/components/atoms/ErrorState'
 import dealService from '@/services/api/dealService'
 
 const Dashboard = () => {
+  const navigate = useNavigate()
   const [deals, setDeals] = useState([])
   const [filteredDeals, setFilteredDeals] = useState([])
   const [loading, setLoading] = useState(true)
@@ -148,8 +150,27 @@ const Dashboard = () => {
     )
   }
 
-  return (
+return (
     <div className="h-screen flex flex-col bg-card">
+      {/* Top Navigation Bar */}
+      <div className="flex-shrink-0 bg-primary text-white px-6 py-2">
+        <div className="flex items-center justify-between">
+          <Button 
+            variant="ghost" 
+            size="sm" 
+            icon="Home"
+            onClick={() => navigate('/')}
+            className="text-white hover:bg-white/10"
+          >
+            Back to Home
+          </Button>
+          <div className="flex items-center space-x-2">
+            <ApperIcon name="Settings" className="w-4 h-4" />
+            <span className="text-sm font-medium">Deal Management</span>
+          </div>
+        </div>
+      </div>
+
       {/* Header */}
       <div className="flex-shrink-0 bg-white border-b border-gray-200 px-6 py-4">
         <div className="flex items-center justify-between">
@@ -190,7 +211,6 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-
       {/* Content */}
       <div className="flex-1 overflow-hidden">
         {viewMode === 'kanban' ? (
@@ -284,8 +304,8 @@ const Dashboard = () => {
                               <p className="font-medium text-gray-900 truncate">
                                 {deal.title}
                               </p>
-                              <p className="text-sm text-gray-500 truncate">
-                                {deal.description}
+<p className="text-sm text-gray-500 truncate max-w-xs">
+                                {deal.description.length > 50 ? deal.description.substring(0, 50) + '...' : deal.description}
                               </p>
                             </div>
                           </div>

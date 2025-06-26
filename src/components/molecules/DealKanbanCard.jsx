@@ -48,12 +48,15 @@ const DealKanbanCard = ({ deal, onDragStart, onEdit, onDelete }) => {
         </div>
       </div>
 
-      {/* Deal Image */}
-      <img
-        src={deal.imageUrl}
-        alt={deal.title}
-        className="w-full h-24 object-cover rounded-lg mb-3"
-      />
+{/* Deal Image */}
+      <div className="relative mb-3">
+        <img
+          src={deal.imageUrl}
+          alt={deal.title}
+          className="w-full aspect-[16/9] object-cover rounded-lg"
+          style={{ aspectRatio: '1024/576' }}
+        />
+      </div>
 
       {/* Deal Info */}
       <div className="space-y-2">

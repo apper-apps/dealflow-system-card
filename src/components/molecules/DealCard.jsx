@@ -41,11 +41,12 @@ const DealCard = ({ deal, onVote }) => {
       className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden cursor-pointer"
       onClick={handleCardClick}
     >
-      <div className="relative">
+<div className="relative">
         <img 
           src={deal.imageUrl} 
           alt={deal.title}
-          className="w-full h-48 object-cover"
+          className="w-full aspect-[16/9] object-cover"
+          style={{ aspectRatio: '1024/576' }}
         />
         <div className="absolute top-3 left-3">
           <Badge variant="discount" size="sm">

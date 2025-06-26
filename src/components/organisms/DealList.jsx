@@ -114,10 +114,10 @@ const DealList = ({ showFilters = true }) => {
           onAction={() => handleFilterChange({ category: null, sortBy: 'newest', status: null })}
         />
       ) : (
-        <motion.div
+<motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="flex flex-col space-y-6"
         >
           {filteredDeals.map((deal, index) => (
             <motion.div

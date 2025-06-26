@@ -16,14 +16,14 @@ const Home = () => {
           <FeaturedBanner />
         </motion.div>
 
-        {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+{/* Main Content */}
+        <div className="flex flex-col lg:flex-row gap-8">
           {/* Deal List */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="lg:col-span-3"
+            className="flex-1 lg:flex-[3]"
           >
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">
@@ -39,9 +39,9 @@ const Home = () => {
           {/* Sidebar */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
+animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4 }}
-            className="lg:col-span-1"
+            className="flex-1 lg:flex-[1]"
           >
             <Sidebar />
           </motion.div>
