@@ -1,6 +1,7 @@
 import Home from '@/components/pages/Home';
 import Categories from '@/components/pages/Categories';
 import Trending from '@/components/pages/Trending';
+import SwipeDeals from '@/components/pages/SwipeDeals';
 import SubmitDeal from '@/components/pages/SubmitDeal';
 import DealDetail from '@/components/pages/DealDetail';
 import Dashboard from '@/components/pages/Dashboard';
@@ -30,6 +31,14 @@ export const routes = {
     path: '/trending',
     icon: 'TrendingUp',
     component: Trending,
+    showInNav: true
+},
+  swipe: {
+    id: 'swipe',
+    label: 'Swipe',
+    path: '/swipe',
+    icon: 'Heart',
+    component: SwipeDeals,
     showInNav: true
   },
   submitDeal: {
