@@ -33,10 +33,13 @@ export default {
         sans: ['Inter', 'ui-sans-serif', 'system-ui'],
         heading: ['Inter', 'ui-sans-serif', 'system-ui']
       },
-      animation: {
+animation: {
         'vote-scale': 'vote-scale 0.3s ease-out',
         'slide-up': 'slide-up 0.3s ease-out',
-        'fade-in': 'fade-in 0.2s ease-out'
+        'fade-in': 'fade-in 0.2s ease-out',
+        'swipe-left': 'swipe-left 0.3s ease-out',
+        'swipe-right': 'swipe-right 0.3s ease-out',
+        'icon-bounce': 'icon-bounce 0.4s ease-in-out'
       },
       keyframes: {
         'vote-scale': {
@@ -51,6 +54,18 @@ export default {
         'fade-in': {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' }
+        },
+        'swipe-left': {
+          '0%': { transform: 'translateX(0)', opacity: '1' },
+          '100%': { transform: 'translateX(-100%)', opacity: '0' }
+        },
+        'swipe-right': {
+          '0%': { transform: 'translateX(0)', opacity: '1' },
+          '100%': { transform: 'translateX(100%)', opacity: '0' }
+        },
+        'icon-bounce': {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.3)' }
         }
       }
     },

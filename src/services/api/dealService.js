@@ -107,6 +107,33 @@ class DealService {
     
     deal.updates = deal.updates || []
     deal.updates.unshift(newUpdate)
+return { ...deal }
+  }
+
+  async ignore(id) {
+    await delay(300)
+    const deal = this.deals.find(d => d.Id === parseInt(id, 10))
+    if (!deal) {
+      throw new Error('Deal not found')
+    }
+    
+    // Mark deal as ignored (could be used for filtering)
+    deal.ignored = true
+    deal.ignoredDate = new Date().toISOString()
+    
+    return { ...deal }
+  }
+
+  async addToFavorites(id) {
+    await delay(300)
+    const deal = this.deals.find(d => d.Id === parseInt(id, 10))
+    if (!deal) {
+      throw new Error('Deal not found')
+    }
+    
+    // Mark deal as favorited
+    deal.favorited = true
+    deal.favoritedDate = new Date().toISOString()
     
     return { ...deal }
   }
