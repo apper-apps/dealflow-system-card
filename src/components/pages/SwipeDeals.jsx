@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { motion, AnimatePresence, useMotionValue, useTransform, PanInfo } from 'framer-motion'
+import { motion, AnimatePresence, useMotionValue, useTransform } from 'framer-motion'
 import { toast } from 'react-toastify'
 import { formatDistanceToNow } from 'date-fns'
 import ApperIcon from '@/components/ApperIcon'
