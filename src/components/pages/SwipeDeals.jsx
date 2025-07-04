@@ -62,23 +62,23 @@ const SwipeDeals = () => {
     }, 300)
   }
 
-  const handleDragEnd = (event, info) => {
+const handleDragEnd = (event, info) => {
     const threshold = 100
     const { offset, velocity } = info
 
     if (offset.x > threshold || velocity.x > 500) {
-      handleSwipe('right', currentDeal?.Id)
+      handleSwipe('right', currentDeal?.id)
     } else if (offset.x < -threshold || velocity.x < -500) {
-      handleSwipe('left', currentDeal?.Id)
+      handleSwipe('left', currentDeal?.id)
     } else {
       // Snap back to center
       x.set(0)
     }
   }
 
-  const handleButtonAction = (action) => {
+const handleButtonAction = (action) => {
     if (currentIndex >= deals.length) return
-    handleSwipe(action, currentDeal?.Id)
+    handleSwipe(action, currentDeal?.id)
   }
 
   const resetSwipe = () => {
